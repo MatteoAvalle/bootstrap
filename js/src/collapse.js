@@ -294,7 +294,7 @@ const Collapse = (($) => {
     _addAriaAndCollapsedClass(element, triggerArray) {
       if (element) {
         let isOpen = $(element).hasClass(ClassName.IN)
-        element.setAttribute('aria-expanded', isOpen)
+        element.attr('aria-expanded', isOpen)
 
         if (triggerArray.length) {
           $(triggerArray)
