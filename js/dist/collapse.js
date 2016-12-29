@@ -280,7 +280,7 @@ var Collapse = (function ($) {
       value: function _addAriaAndCollapsedClass(element, triggerArray) {
         if (element) {
           var isOpen = $(element).hasClass(ClassName.IN);
-          element.setAttribute('aria-expanded', isOpen);
+          element.attr('aria-expanded', isOpen);
 
           if (triggerArray.length) {
             $(triggerArray).toggleClass(ClassName.COLLAPSED, !isOpen).attr('aria-expanded', isOpen);
